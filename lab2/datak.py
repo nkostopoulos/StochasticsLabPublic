@@ -1,53 +1,66 @@
-from numpy import vstack,array
-from numpy.random import rand
-import numpy as np
-from scipy.cluster.vq import kmeans,vq
-import pandas as pd
-pd.core.common.is_list_like = pd.api.types.is_list_like
-import pandas_datareader as dr
-from math import sqrt
+import matplotlib.pyplot as plt
+from sklearn import datasets
 from sklearn.cluster import KMeans
-from matplotlib import pyplot as plt
+import sklearn.metrics as sm
  
+import pandas as pd
+import numpy as np
  
-sp500_url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
+# Only needed if you want to display your plots inline if using Notebook
+# change inline to auto if you have Spyder installed
+%matplotlib inline
+
+# import some data to play with
+iris = datasets.load_iris()
+
+iris.data
+iris.feature_names
+iris.target
+iris.target_names
+
+# Store the inputs as a Pandas Dataframe and set the column names
+x = pd.DataFrame(iris.data)
+x.columns = ['Sepal_Length','Sepal_Width','Petal_Length','Petal_Width']
  
-#read in the url and scrape ticker data
-data_table = pd.read_html(sp500_url)
+y = pd.DataFrame(iris.target)
+y.columns = ['Targets']
 
-tickers = data_table[0][1:][0].tolist()
-prices_list = []
-for ticker in tickers:
-    try:
-        prices = dr.DataReader(ticker,'yahoo','01/01/2017')['Adj Close']
-        prices = pd.DataFrame(prices)
-        prices.columns = [ticker]
-        prices_list.append(prices)
-    except:
-        pass
-    prices_df = pd.concat(prices_list,axis=1)
+	
+# Set the size of the plot
+plt.figure(figsize=(14,7))
  
-prices_df.sort_index(inplace=True)
+# Create a colormap
+colormap = np.array(['red', 'lime', 'black'])
  
-prices_df.head()
+# Plot Sepal
+plt.subplot(1, 2, 1)
+plt.scatter(x.Sepal_Length, x.Sepal_Width, c=colormap[y.Targets], s=40)
+plt.title('Sepal')
+ 
+plt.subplot(1, 2, 2)
+plt.scatter(x.Petal_Length, x.Petal_Width, c=colormap[y.Targets], s=40)
+plt.title('Petal')
 
-#Calculate average annual percentage return and volatilities over a theoretical one year period
-returns = prices_df.pct_change().mean() * 252
-returns = pd.DataFrame(returns)
-returns.columns = ['Returns']
-returns['Volatility'] = prices_df.pct_change().std() * sqrt(252)
+# K Means Cluster
+model = KMeans(n_clusters=3)
+model.fit(x)
 
-#format the data as a numpy array to feed into the K-Means algorithm
-data = np.asarray([np.asarray(returns['Returns']),np.asarray(returns['Volatility'])]).T
+# This is what KMeans thought
+model.labels_
 
-X = data
-distorsions = []
-for k in range(2, 20):
-    k_means = KMeans(n_clusters=k)
-    k_means.fit(X)
-    distorsions.append(k_means.inertia_)
-
-fig = plt.figure(figsize=(15, 5))
-plt.plot(range(2, 20), distorsions)
-plt.grid(True)
-plt.title('Elbow curve')
+# View the results
+# Set the size of the plot
+plt.figure(figsize=(14,7))
+ 
+# Create a colormap
+colormap = np.array(['red', 'lime', 'black'])
+ 
+# Plot the Original Classifications
+plt.subplot(1, 2, 1)
+plt.scatter(x.Petal_Length, x.Petal_Width, c=colormap[y.Targets], s=40)
+plt.title('Real Classification')
+ 
+# Plot the Models Classifications
+plt.subplot(1, 2, 2)
+plt.scatter(x.Petal_Length, x.Petal_Width, c=colormap[model.labels_], s=40)
+plt.title('K Mean Classification')
