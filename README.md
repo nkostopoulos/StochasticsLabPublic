@@ -7,3 +7,5 @@ Our 2019 course will include the following exercises:
 3) Markov Chains and Simulation (heavily based on the Stochastic Processes course of the 6th semester in ECE NTUA)  
 4) Simulated Annealing and Restricted Boltzmann Machine (RBM)  
 5) Markov Decision Processes and Q-Learning  
+  
+Note: Some of these exercises are taken from online courses
