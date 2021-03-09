@@ -12,3 +12,5 @@ Our 2021 course will include the following exercises provided as Jupyter Noteboo
 8) Radial Basis Function (RBF) and Support Vector Machine (SVM)  
 9) Decision Trees and Random Forests  
 10) Long Short-Term Memory (LSTM), Application in the DNS DDoS attack mitigation: the DNS Water Torture Attack use case   
+  
+Note: Some exercises are taken from online sources.
