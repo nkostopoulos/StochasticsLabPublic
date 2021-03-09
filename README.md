@@ -11,3 +11,5 @@ Our 2020 course will include the following exercises provided as Jupyter Noteboo
 7) Naive Bayes Classifier (Application in DNS DDoS attack mitigation: the DNS Water Torture Attack use case)  
 8) Radial Basis Function (RBF) and Support Vector Machine (SVM)  
 9) Decision Trees and Random Forests  
+  
+Note: Some of these exercises are taken from online sources.
