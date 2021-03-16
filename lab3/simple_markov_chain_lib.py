@@ -1,3 +1,4 @@
+# This code is taken from the laboratory of "Stochastic Processes" course of ECE NTUA 6th semester, Prof. Loulakis
 from bisect import bisect_left
 from random import random
 
