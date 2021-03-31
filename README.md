@@ -5,12 +5,13 @@ Our 2021 course will include the following exercises provided as Jupyter Noteboo
 1) Linear Regression and Polynomial Regression  
 2) Logistic Regression, K-means Clustering and Principal Component Analysis (PCA)  
 3) Markov Chains and Simulation (heavily based on the Stochastic Processes course of the 6th semester in ECE NTUA)  
-4) Simulated Annealing and Restricted Boltzmann Machine (RBM)  
-5) Markov Decision Processes and Q-Learning  
-6) Bellman-Ford Algorithm (Application in the BGP protocol)  
-7) Naive Bayes Classifier (Application in DNS DDoS attack mitigation: the DNS Water Torture Attack use case)  
-8) Radial Basis Function (RBF) and Support Vector Machine (SVM)  
-9) Decision Trees and Random Forests  
-10) Long Short-Term Memory (LSTM), Application in the DNS DDoS attack mitigation: the DNS Water Torture Attack use case   
+4) The Metropolis-Hastings Algorithm  
+5) Simulated Annealing and Restricted Boltzmann Machine (RBM)  
+6) Markov Decision Processes and Q-Learning  
+7) Bellman-Ford Algorithm (Application in the BGP protocol)  
+8) Naive Bayes Classifier (Application in DNS DDoS attack mitigation: the DNS Water Torture Attack use case)  
+9) Radial Basis Function (RBF) and Support Vector Machine (SVM)  
+10) Decision Trees and Random Forests  
+11) Long Short-Term Memory (LSTM), Application in the DNS DDoS attack mitigation: the DNS Water Torture Attack use case   
   
 Note: Some exercises are taken from online sources.
