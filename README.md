@@ -12,6 +12,5 @@ Our 2021 course will include the following exercises provided as Jupyter Noteboo
 8) Naive Bayes Classifier (Application in DNS DDoS attack mitigation: the DNS Water Torture Attack use case)  
 9) Radial Basis Function (RBF) and Support Vector Machine (SVM)  
 10) Decision Trees and Random Forests  
-11) Long Short-Term Memory (LSTM), Application in the DNS DDoS attack mitigation: the DNS Water Torture Attack use case   
   
 Note: Some exercises are taken from online sources.
