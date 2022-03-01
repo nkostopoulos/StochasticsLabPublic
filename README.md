@@ -3,7 +3,7 @@ This is the repository for the postgraduate course Stochastic Processes &amp; Op
   
 Our 2022 course will include the following exercises provided as Jupyter Notebooks:  
 1) Linear Regression, Polynomial Regression and Logistic Regression  
-2) K-means Clustering, Principal Component Analysis (PCA) , Self-Organized Maps (SOM) and Autoencoders  
+2) K-means Clustering, Principal Component Analysis (PCA), Self-Organized Maps (SOM) and Autoencoders  
 3) Markov Chains and Simulation (heavily based on the Stochastic Processes course of the 6th semester in ECE NTUA)  
 4) The Metropolis-Hastings Algorithm  
 5) Simulated Annealing  
