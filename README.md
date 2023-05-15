@@ -9,8 +9,8 @@ Our 2023 course will include the following exercises provided as Jupyter Noteboo
 5) Restricted Boltzmann Machine (RBM) and Deep Belief Networks  
 6) Markov Decision Processes and Q-Learning  
 7) Bellman-Ford Algorithm (Application in the BGP protocol)  
-8) Radial Basis Function (RBF), Support Vector Machine (SVM) and K-Nearest Neighbors  
-9) Naive Bayes Classifier (Application in DNS DDoS Cyberattack protection)  
+8) Radial Basis Function (RBF), Support Vector Machine (SVM)  
+9) Naive Bayes Classifier (Application in DNS DDoS Cyberattack protection) and K-Nearest Neighbors (KNN)  
 10) Decision Trees and Random Forests  
 11) Long Short-Term Memory (LSTM), application in Cybersecurity  
 12) SHAP-based eXplainable AI (XAI) for tree-based classifiers  
