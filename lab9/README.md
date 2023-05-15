@@ -1,3 +1,3 @@
-Exercises for Lab 10
+Exercises for Lab 9
 
-Radial Basis Function (RBF), Support Vector Machine (SVM) and K-Nearest Neighbors
+Naive Bayes Classifier and K-Nearest Neighbors (KNN)
