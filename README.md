@@ -1,7 +1,7 @@
 # StochasticsLabPublic
 This is the repository for the postgraduate course Stochastic Processes &amp; Optimization in Machine Learning. This course is included in the Data Science &amp; Machine Learning (DSML) program of the National Technical University of Athens (NTUA).  
   
-Our 2024 course will include the following exercises provided as Jupyter Notebooks:  
+Our 2025 course will include the following exercises provided as Jupyter Notebooks:  
 1) Linear Regression, Polynomial Regression and Logistic Regression  
 2) K-means Clustering, Principal Component Analysis (PCA), Self-Organized Maps (SOM) and Autoencoders  
 3) Markov Chains and Simulation (heavily based on the Stochastic Processes course of the 6th semester in ECE NTUA)  
