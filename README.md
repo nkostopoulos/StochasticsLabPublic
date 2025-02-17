@@ -11,6 +11,8 @@ Our 2025 course will include the following exercises provided as Jupyter Noteboo
 7) Bellman-Ford Algorithm (Application in the BGP protocol)  
 8) Radial Basis Function (RBF), Support Vector Machine (SVM)  
 9) Naive Bayes Classifier (Application in DNS DDoS Cyberattack protection) and K-Nearest Neighbors (KNN)  
-10) Decision Trees and Random Forests  
+10) Decision Trees and Random Forests
+11) Long Short-Term Memory (LSTM), application in Cybersecurity
+12) SHAP-based eXplainable AI (XAI) for tree-based classifiers 
   
 Note: Some exercises are taken from online sources and the respective code is not developed by us. We try to reference our sources as much as possible within the exercises.  
